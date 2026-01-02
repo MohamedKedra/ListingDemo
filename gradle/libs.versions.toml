@@ -9,6 +9,19 @@ lifecycleRuntimeKtx = "2.10.0"
 activityCompose = "1.12.2"
 composeBom = "2024.09.00"
 
+hiltDagger = "2.51"
+retrofit = "2.9.0"
+okhttp = "4.12.0"
+coroutineVersion = "1.7.3"
+hiltCompose = "1.2.0"
+apollo = "3.8.2"
+mockkVersion = "1.13.5"
+coil = "2.5.0"
+mockServer = "4.12.0"
+coroutinesTest = "1.8.1"
+turbine = "1.0.0"
+paging = "3.3.2"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -25,8 +38,31 @@ androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-
 androidx-compose-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
 
+paging-runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+paging-compose = { module = "androidx.paging:paging-compose", version.ref = "paging" }
+
+turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+mockk = {group = "io.mockk" , name= "mockk" , version.ref = "mockkVersion"}
+apollo-runtime = {group = "com.apollographql.apollo3" , name= "apollo-runtime" , version.ref = "apollo"}
+#apollo-testing = { group = "com.apollographql.apollo3", name = "apollo-testing" ,version.ref="apollo"}
+mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver" ,version.ref="mockServer"}
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test" ,version.ref="coroutinesTest"}
+
+retrofit = { group = "com.squareup.retrofit2",name= "retrofit", version.ref = "retrofit" }
+retrofit-gson = { group = "com.squareup.retrofit2",name= "converter-gson", version.ref = "retrofit" }
+okhttp-logging = { group = "com.squareup.okhttp3",name= "logging-interceptor", version.ref = "okhttp" }
+kotlinx-coroutines = { group = "org.jetbrains.kotlinx",name= "kotlinx-coroutines-android", version.ref = "coroutineVersion" }
+google-dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltDagger" }
+hilt-compiler = {group = "com.google.dagger" , name= "hilt-compiler" , version.ref = "hiltDagger"}
+hilt-navigation-compose = {group = "androidx.hilt" , name= "hilt-navigation-compose" , version.ref = "hiltCompose"}
+coil-compose = {group = "io.coil-kt" , name= "coil-compose" , version.ref = "coil"}
+
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+hilt = { id = "com.google.dagger.hilt.android", version = "2.51" }
+apollo = { id = "com.apollographql.apollo3", version.ref = "apollo" }
+
 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_screen_title">المركبات</string>
+    <string name="details_screen_title">تفاصيل المركبه (id: %s)</string>
+
+    <string name="Mission">المهمه</string>
+    <string name="id">ID: </string>
+    <string name="type">النوع: </string>
+    <string name="name">الاسم: </string>
+    <string name="rocket">الصاروخ</string>
+    <string name="site">الموقع</string>
+</resources>

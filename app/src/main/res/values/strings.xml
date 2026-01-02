@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">ListingDemo</string>
+    <string name="home_screen_title">Launches</string>
+    <string name="details_screen_title">Launch Detail (id: %s)</string>
+
+    <string name="mission">Mission</string>
+    <string name="id">ID: </string>
+    <string name="type">TYPE: </string>
+    <string name="name">NAME: </string>
+    <string name="rocket">Rocket</string>
+    <string name="site">Site</string>
 </resources>
